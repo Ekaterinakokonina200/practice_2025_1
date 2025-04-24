@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Киберполигон CTF | Главная</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                
+                <span>Киберполигон: CTF</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active"><i class="fas fa-home"></i> Главная</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> О проекте</a></li>
+                <li><a href="team.html"><i class="fas fa-users"></i> Участники</a></li>
+                <li><a href="journal.html"><i class="fas fa-book"></i> Журнал</a></li>
+                <li><a href="resources.html"><i class="fas fa-link"></i> Ресурсы</a></li>
+            </ul>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <h1>CTF</h1>
+            <a href="about.html" class="btn btn-primary">Узнать больше</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- About Section -->
+        <section class="about-section">
+            <h2>О нашем проекте</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>Киберполигон CTF - это .</p>
+                    <a href="about.html" class="btn btn-outline">Подробнее о проекте</a>
+                </div>
+                <div class="about-image">
+                    <img src="images/progress-chart.png" alt="Прогресс проекта">
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Киберполигон CTF</h3>
+                    <div class="social-links">
+                        <a href="https://github.com/Ekaterinakokonina200/practice_2025_1"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    
+                </div>
+                <div class="footer-col">
+                    <h3>Контакты</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> contact@cyberpolygon-ctf.ru</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025, Баранова МГ, Коконина ЕО, Отхонова АА</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
