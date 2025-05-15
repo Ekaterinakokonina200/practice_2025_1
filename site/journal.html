@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Киберполигон | Журнал</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Additional styles for journal page */
+        .journal-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .journal-header h1 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+        
+        .journal-header p {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .student-reports {
+            display: grid;
+            gap: 40px;
+        }
+        
+        .report-card {
+            background-color: white;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            overflow: hidden;
+            transition: var(--transition);
+        }
+        
+        .report-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        .report-header {
+            background-color: var(--primary-color);
+            padding: 20px;
+            padding-top: 40px;
+        }
+        
+        .report-header h2 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+        
+        .report-content {
+            padding: 30px;
+        }
+        
+        .report-section {
+            margin-bottom: 25px;
+        }
+        
+        .report-section h3 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        .report-section h3 i {
+            margin-right: 10px;
+            color: var(--secondary-color);
+        }
+        
+        .report-section ul {
+            margin-left: 20px;
+        }
+        
+        .report-section li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 25px;
+        }
+        
+        .report-section li:before {
+            color: var(--secondary-color);
+            font-size: 1.5rem;
+            position: absolute;
+            left: 0;
+            top: -5px;
+        }
+        
+        .back-to-top {
+            display: block;
+            text-align: center;
+            margin-top: 40px;
+        }
+        
+        @media (max-width: 768px) {
+            .report-header h2 {
+                font-size: 1.3rem;
+            }
+            
+            .report-content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <span>CYBERSECURITY SPECIALISTS</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fas fa-home"></i> Главная</a></li>
+                <li><a href="about.html" class="active"><i class="fas fa-info-circle"></i> О проекте</a></li>
+                <li><a href="team.html"><i class="fas fa-users"></i> Участники</a></li>
+                <li><a href="journal.html"><i class="fas fa-book"></i> Журнал</a></li>
+                <li><a href="resources.html"><i class="fas fa-link"></i> Ресурсы</a></li>
+            </ul>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Journal Header -->
+    <header class="journal-header">
+        <div class="container">
+            <h1>Журнал проекта</h1>
+            <p>Отчеты участников о проделанной работе и достижениях в течение семестра</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <section class="student-reports">
+            <!-- Report 1 -->
+            <article class="report-card" id="report1">
+                <div class="report-header">
+                    <h2>Коконина Екатерина Олеговна (241-371)</h2>
+                </div>
+                <div class="report-content">
+                    <div class="report-section">
+                        <p>За семестр я значительно продвинулась в развитии профессиональных навыков в области информационной безопасности. Теоретические знания подкреплялись активной практикой, в частности, решением задач на платформе Hack The Box, что позволило мне усовершенствовать навыки пентестинга и анализа уязвимостей.</p>
+                    </div>
+                    
+                    <div class="report-section">
+                        <h3><i class="fas fa-search"></i> Исследовательская работа</h3>
+                        <p>В первой половине семестра изучала разработку концепции системы киберразведки для выявления потенциальных угроз. А также знакомилась с криптографическим протоколом шифрования TLS.</p>
+                        <p>Я изучала методы атак на веб-приложения, техники скрытой передачи данных и анализировала сетевой трафик с помощью Wireshark, получая практический опыт в обнаружении и предотвращении киберугроз.</p>
+                    </div>
+                    
+                    <div class="report-section">
+                        <h3><i class="fas fa-chart-line"></i> Итоги семестра</h3>
+                        <p>В течение семестра я активно участвовала в мероприятиях, направленных на повышение квалификации в области информационной безопасности. Практическая работа на платформе Hack The Box, анализ уязвимостей веб-приложений, изучение методов скрытой передачи данных и исследование сетевого трафика с использованием Wireshark способствовали развитию технических навыков и углублению теоретических знаний.</p>
+                        <p>Посещение компаний R-Vision и Angara Security, а также участие в мастер-классе от "Инфосистемы Джет", позволили ознакомиться с передовым опытом и актуальными тенденциями в сфере кибербезопасности.</p>
+                    </div>
+                </div>
+            </article>
+            
+            <!-- Report 2 -->
+            <article class="report-card" id="report2">
+                <div class="report-header">
+                    <h2>Баранова Мария (241-371)</h2>
+                </div>
+                <div class="report-content">
+                    <div class="report-section">
+                        <p>В течение семестра я активно совершенствовала свои компетенции в области информационной безопасности, совмещая углубленное изучение теории с интенсивной практикой.</p>
+                    </div>
+                    
+                    <div class="report-section">
+                        <h3><i class="fas fa-laptop-code"></i> Практическое освоение кибербезопасности</h3>
+                        <p>Особое внимание я уделила практическому тестированию на проникновение и анализу уязвимостей, решая задачи на платформе Hack The Box. В процессе работы я:</p>
+                        <ul>
+                            <li>Освоила методы эксплуатации уязвимостей веб-приложений (SQL-инъекции)</li>
+                            <li>Исследовала техники стеганографии для скрытой передачи данных</li>
+                            <li>Анализировала сетевой трафик в Wireshark, отрабатывая обнаружение аномалий и атак (например, подозрительные DNS-запросы)</li>
+                        </ul>
+                        <p>Это позволило мне развить навыки поиска уязвимостей и понимание механизмов защиты инфраструктуры.</p>
+                    </div>
+                    
+                    <div class="report-section">
+                        <h3><i class="fas fa-shield-alt"></i> Опыт в безопасной веб-разработке</h3>
+                        <p>Параллельно я углублялась в разработку защищенных веб-приложений на Django, где:</p>
+                        <ul>
+                            <li>Изучила основы фреймворка: работу с моделями, представлениями, шаблонами и ORM</li>
+                            <li>Реализовала REST API с использованием Django REST Framework, уделяя внимание аутентификации и защите от распространенных атак</li>
+                            <li>Настроила Docker-контейнеризацию проекта для удобства развертывания и изоляции окружения</li>
+                        </ul>
+                        <p>Этот опыт дал мне не только понимание backend-разработки, но и принципов security-by-design при создании веб-сервисов.</p>
+                    </div>
+                    
+                    <div class="report-section">
+                        <h3><i class="fas fa-briefcase"></i> Знакомство с индустрией и карьерные ориентиры</h3>
+                        <p>Для расширения кругозора я посещала мероприятия от лидеров рынка:</p>
+                        <ul>
+                            <li>В R-Vision узнала о реальных кейсах SOC и защите корпоративных сетей</li>
+                            <li>На мастер-классе от «Инфосистемы Джет» изучила карьерные пути в ИБ: от специалиста по анализу угроз до архитектора безопасности</li>
+                            <li>На встрече с Angara Security разобрала современные технологии защиты данных</li>
+                        </ul>
+                        <p>Эти мероприятия помогли мне соотнести свои навыки с актуальными требованиями работодателей и определить дальнейшие шаги для профессионального роста.</p>
+                    </div>
+                </div>
+            </article>
+            
+            <!-- Report 3 -->
+            <article class="report-card" id="report3">
+                <div class="report-header">
+                    <h2>Отхонова Амуланга Александровна (241-371)</h2>
+                </div>
+                <div class="report-content">
+                    <div class="report-section">
+                        <p>В течение семестра я активно развивала свои профессиональные навыки в сфере информационной безопасности, сочетая теоретическое обучение с практической работой.</p>
+                    </div>
+                    
+                    <div class="report-section">
+                        <h3><i class="fas fa-user-secret"></i> Практика в области ИБ</h3>
+                        <p>Одним из ключевых направлений моей деятельности было решение задач на платформе Hack The Box, что помогло мне улучшить технические навыки в области пентестинга и анализа уязвимостей. Я изучала методы атак на веб-приложения, исследовала способы скрытой передачи данных и анализировала сетевой трафик с помощью Wireshark, что дало мне практический опыт в обнаружении и предотвращении киберугроз.</p>
+                    </div>
+                    
+                    <div class="report-section">
+                        <h3><i class="fas fa-code"></i> Веб-разработка с Django</h3>
+                        <p>Помимо этого, я углублялась в разработку безопасных веб-приложений, осваивая фреймворк Django. В рамках этого направления я:</p>
+                        <ul>
+                            <li>Изучала основы работы с Django, включая создание моделей, представлений и шаблонов</li>
+                            <li>Интегрировала Docker в ранее разработанный проект для контейнеризации приложения и упрощения развертывания</li>
+                            <li>Реализовывала REST API с использованием Django REST Framework, что позволило мне лучше понять принципы построения безопасных и масштабируемых веб-сервисов</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="report-section">
+                        <h3><i class="fas fa-network-wired"></i> Профессиональное развитие</h3>
+                        <p>Для расширения профессионального кругозора я посещала мероприятия от ведущих компаний в сфере кибербезопасности:</p>
+                        <ul>
+                            <li>В R-Vision я узнала о реальных кейсах защиты корпоративных систем</li>
+                            <li>На мастер-классе от «Инфосистемы Джет» познакомилась с карьерными возможностями в отрасли</li>
+                            <li>На мероприятии Angara Security изучила передовые технологии защиты данных</li>
+                        </ul>
+                        <p>Эти встречи помогли мне лучше понять актуальные тренды и требования рынка.</p>
+                    </div>
+                    
+                    <div class="report-section">
+                        <h3><i class="fas fa-check-circle"></i> Итоги</h3>
+                        <p>Таким образом, за семестр я не только укрепила технические навыки в области ИБ, но и получила опыт в безопасной веб-разработке, что делает мой профиль более универсальным и востребованным.</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+        
+        <a href="#" class="back-to-top btn btn-secondary"><i class="fas fa-arrow-up"></i> Наверх</a>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>GitHub</h3>
+                    <div class="social-links">
+                        <a href="https://github.com/Ekaterinakokonina200/practice_2025_1"><i class="fab fa-github"></i> practice_2025_1 </a>
+                    </div>
+                </div>
+               
+                <div class="footer-col">
+                    <h3>Контакты</h3>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> @curly_beast6 </li>
+                        <li><i class="fas fa-phone"></i> @ekater1nakokon1na </li>
+                        <li><i class="fas fa-phone"></i> @sugarkisss </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025, Баранова МГ, Коконина ЕО, Отхонова АА</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+
+        // Back to top button
+        const backToTopBtn = document.querySelector('.back-to-top');
+        
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                backToTopBtn.style.display = 'block';
+            } else {
+                backToTopBtn.style.display = 'none';
+            }
+        });
+        
+        backToTopBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        });
+    </script>
+</body>
+</html>

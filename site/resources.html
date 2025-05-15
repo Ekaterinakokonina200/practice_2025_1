@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Киберполигон | Ресурсы</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Additional styles for resources page */
+        .resources-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .resources-header h1 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+        
+        .resources-header p {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .resources-content {
+            display: grid;
+            gap: 40px;
+        }
+        
+        .resource-section {
+            background-color: white;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            padding: 30px;
+        }
+        
+        .resource-section h2 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .resource-section h2 i {
+            margin-right: 15px;
+            color: var(--secondary-color);
+        }
+        
+        .companies-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .company-card {
+            border: 1px solid #eee;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            transition: var(--transition);
+        }
+        
+        .company-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .company-logo {
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+        
+        .company-logo img {
+            max-height: 100%;
+            max-width: 100%;
+            object-fit: contain;
+        }
+        
+        .company-info {
+            padding: 20px;
+        }
+        
+        .company-info h3 {
+            margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+        
+        .company-link {
+            display: inline-block;
+            margin-top: 15px;
+            color: var(--secondary-color);
+            font-weight: 600;
+        }
+        
+        .company-link i {
+            margin-left: 5px;
+            transition: var(--transition);
+        }
+        
+        .company-link:hover i {
+            transform: translateX(3px);
+        }
+        
+        .useful-links {
+            margin-top: 30px;
+        }
+        
+        .useful-links ul {
+            list-style: none;
+        }
+        
+        .useful-links li {
+            margin-bottom: 10px;
+            padding-left: 30px;
+            position: relative;
+        }
+        
+        .useful-links li:before {
+            content: "→";
+            color: var(--secondary-color);
+            position: absolute;
+            left: 0;
+        }
+        
+        .useful-links a {
+            color: var(--text-color);
+            transition: var(--transition);
+        }
+        
+        .useful-links a:hover {
+            color: var(--secondary-color);
+        }
+        
+        @media (max-width: 768px) {
+            .resource-section {
+                padding: 20px;
+            }
+            
+            .companies-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <span>CYBERSECURITY SPECIALISTS</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fas fa-home"></i> Главная</a></li>
+                <li><a href="about.html" class="active"><i class="fas fa-info-circle"></i> О проекте</a></li>
+                <li><a href="team.html"><i class="fas fa-users"></i> Участники</a></li>
+                <li><a href="journal.html"><i class="fas fa-book"></i> Журнал</a></li>
+                <li><a href="resources.html"><i class="fas fa-link"></i> Ресурсы</a></li>
+            </ul>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Resources Header -->
+    <header class="resources-header">
+        <div class="container">
+            <h1>Полезные ресурсы</h1>
+            <p>Материалы и партнеры проекта, которые помогут в изучении кибербезопасности</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <section class="resources-content">
+            <!-- Project Education Section -->
+            <div class="resource-section">
+                <h2><i class="fas fa-graduation-cap"></i> Обучение через работу над реальными проектами</h2>
+                <p>Проектная деятельность — это дисциплина, которая внедрена во все учебные планы Московского Политеха с первого по последний курс на всех направлениях подготовки бакалавриата и специалитета.</p>
+                
+                <p>Проекты позволяют не только выстроить связь преподаваемых дисциплин с практикой, но и сформировать компетенции, которые требуют работодатели во всех сферах и отраслях: командная работа, междисциплинарность, ориентация на продукт и креативное мышление.</p>
+                
+                <div class="useful-links">
+                    <h3>Полезные ссылки:</h3>
+                    <ul>
+                        <li><a href="https://new.mospolytech.ru/" target="_blank">Официальный сайт Московского Политеха</a></li>
+                        <li><a href="https://new.mospolytech.ru/obrazovanie/proektnaya-deyatelnost/" target="_blank">Проектная деятельность в Московском Политехе</a></li>
+                        <li><a href="https://new.mospolytech.ru/postupayushchim/programmy-obucheniya/" target="_blank">Образовательные программы</a></li>
+                        <li><a href="https://projects.mospolytech.ru/tproduct/413315123-945301126692-kiberpoligon" target="_blank">Проект Киберполигон</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Partners Section -->
+            <div class="resource-section">
+                <h2><i class="fas fa-handshake"></i> Партнеры проекта</h2>
+                <p>Наш вуз сотрудничает с ведущими компаниями в области информационной безопасности и IT-разработки:</p>
+                
+                <div class="companies-grid">
+                    <!-- Jet Infosystems -->
+                    <div class="company-card">
+                        <div class="company-logo">
+                            <img src="images/is_jet_big.png" alt="Логотип Инфосистемы Джет">
+                        </div>
+                        <div class="company-info">
+                            <h3>Инфосистемы Джет</h3>
+                            <p>Ведущий российский системный интегратор и разработчик ИТ-решений. Компания специализируется на комплексных проектах в области информационной безопасности, управления ИТ-инфраструктурой и разработки программного обеспечения.</p>
+                            <a href="https://www.jet.su/" class="company-link" target="_blank">Подробнее <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- R-Vision -->
+                    <div class="company-card">
+                        <div class="company-logo">
+                            <img src="images/r_vision.png" alt="Логотип R-Vision">
+                        </div>
+                        <div class="company-info">
+                            <h3>R-Vision</h3>
+                            <p>Российский разработчик решений в области информационной безопасности. Компания предлагает продукты и сервисы для защиты от киберугроз, включая системы обнаружения атак, анализа защищенности и управления информационной безопасностью.</p>
+                            <a href="https://www.rvision.pro/" class="company-link" target="_blank">Подробнее <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Learning Resources Section -->
+            <div class="resource-section">
+                <h2><i class="fas fa-book-open"></i> Обучающие материалы</h2>
+                <p>Полезные ресурсы для изучения кибербезопасности и современных IT-технологий:</p>
+                
+                <div class="useful-links">
+                    <h3>Популярные платформы:</h3>
+                    <ul>
+                        <li><a href="https://www.hackthebox.com/" target="_blank">Hack The Box - платформа для практики пентестинга</a></li>
+                        <li><a href="https://tryhackme.com/" target="_blank">TryHackMe - интерактивное обучение кибербезопасности</a></li>
+                        <li><a href="https://www.cybrary.it/" target="_blank">Cybrary - курсы по информационной безопасности</a></li>
+                    </ul>
+                    
+                    <h3 style="margin-top: 20px;">Технологии проекта:</h3>
+                    <ul>
+                        <li><a href="https://reactjs.org/" target="_blank">React - документация по фронтенд-разработке</a></li>
+                        <li><a href="https://www.djangoproject.com/" target="_blank">Django - официальный сайт фреймворка</a></li>
+                        <li><a href="https://www.docker.com/" target="_blank">Docker - платформа для контейнеризации</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>GitHub</h3>
+                    <div class="social-links">
+                        <a href="https://github.com/Ekaterinakokonina200/practice_2025_1"><i class="fab fa-github"></i> practice_2025_1 </a>
+                    </div>
+                </div>
+               
+                <div class="footer-col">
+                    <h3>Контакты</h3>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> @curly_beast6 </li>
+                        <li><i class="fas fa-phone"></i> @ekater1nakokon1na </li>
+                        <li><i class="fas fa-phone"></i> @sugarkisss </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025, Баранова МГ, Коконина ЕО, Отхонова АА</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
